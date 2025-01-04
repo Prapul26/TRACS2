@@ -6,6 +6,7 @@ import Inbox from "./UserNavbar/Inbox";
 import Email from "./UserNavbar/Email";
 import Intro from "./UserNavbar/Intro";
 import AddContacts from "./UserNavbar/AddContacts";
+import MyMembership from "./UserNavbar/MyMembership";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/email" element={<Email/>}/>
           <Route path="/intro" element={<Intro/>}/>
           <Route path="/addContacts" element={<AddContacts/>}/>
+          <Route path="/" element={<MyMembership/>} />
         </Routes>
       </div>
     </Router>

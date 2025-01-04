@@ -32,7 +32,7 @@ const handelUserNav=()=>{
           <FaHome size={25} style={{marginRight:'6px'}}/> <h2>Home</h2>
           </div>
           <div className="navs">
-            <div className="membership"><div className="a2"><MdOutlineCardMembership size={20} className="a1" style={{marginTop:"24px",paddingLeft:'5px',paddingRight:'5px'}}/></div><h3>My Membership</h3> </div>
+          <Link to='/'  style={{color:"inherit",textDecoration:"none"}}> <div className="membership"><div className="a2"><MdOutlineCardMembership size={20} className="a1" style={{marginTop:"24px",paddingLeft:'5px',paddingRight:'5px'}}/></div><h3>My Membership</h3> </div></Link>
             <div className="accountSettings"><div className="a3"><IoSettingsSharp size={20}  style={{marginTop:"22px",paddingLeft:'5px',paddingRight:'5px'}}/></div><h3>Account Settings/Profile</h3> </div>
             <div className="businessProfile"><div className="a5"><ImProfile size={20} style={{marginTop:"22px",paddingLeft:'5px',paddingRight:'5px'}}/></div><h3>My Business Profile</h3> </div>
            <div className="intro1">
@@ -57,7 +57,9 @@ const handelUserNav=()=>{
          <div className="a1">{userNav ?  <FaArrowCircleLeft size={26} style={{paddingLeft:"10px"}}/>:<FaArrowCircleRight size={26}   style={{paddingLeft:"10px"}}/>}</div>
         </div></div>
         <div className="userProfile-container">
-          <div className="profile-pic"></div>
+          <div className="profile-pic">
+            <img src="https://tracsdev.apttechsol.com/public/uploads/custom-images/user-2024-07-09-02-52-30-9248.png" style={{height:"100%",width:"100%"}}/>
+          </div>
           <div className="profile-name"><h3>Santhosh</h3></div>
         </div>
       </div>

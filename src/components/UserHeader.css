@@ -9,6 +9,11 @@ align-items: center;
    
 
 }
+.header {
+    display: flex;
+    position: relative; /* Ensures the `.usernav` is positioned relative to this container */
+}
+
 .userProfile-container{
 display: flex;
 align-items: center;
@@ -42,7 +47,9 @@ padding-right: 20px;
 .arrow{
     display: flex;
     cursor: pointer;
-   
+   position: absolute;
+   color: blue;
+   margin-top: -10px;
    
 }
 .a1{
@@ -64,6 +71,7 @@ padding-right: 20px;
 
 .usernav{
     width: 400px;
+    position:absolute;
     height: 100vh;
     background-color: #000000;
     cursor: pointer;
@@ -73,7 +81,7 @@ padding-right: 20px;
     border-bottom: 1px solid;
 }
 .navs h3:hover{
-    color: white;
+    color: rgb(25, 232, 18);
 }
 .logout{
     display: flex;
@@ -95,8 +103,14 @@ padding-right: 20px;
     border-bottom: 1px solid;
     cursor: pointer;
 }
+
 .intro1{
     border-bottom: 1px solid;
+}
+.navs h3{
+    margin-top: 19px;
+    margin-bottom: 3px;
+    color: white;
 }
 
 @media (max-width: 480px) {
@@ -139,5 +153,13 @@ padding-right: 20px;
     .businessProfile,
     .accountSettings {
         padding: 5px;
+    }
+    .navs h3{
+        margin-top: 14px;
+        margin-bottom: 3px;
+        color: white;
+    }
+    .usernav{
+        width: 80%;
     }
 }

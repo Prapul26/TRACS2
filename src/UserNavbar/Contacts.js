@@ -4,7 +4,7 @@ import UserHeader from "../components/UserHeader";
 import { Link } from "react-router-dom";
 const Contacts = () => {
   return (
-    <div>
+    <div >
       <UserHeader />
       <div className="contacts-container">
         <div className="c-header">
